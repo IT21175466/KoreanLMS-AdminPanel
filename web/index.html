@@ -32,6 +32,33 @@
   <title>koreanadminpanel</title>
   <link rel="manifest" href="manifest.json">
 
+  <script type="module">
+
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "firebase/app";
+    import { getAnalytics } from "firebase/analytics";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyB9UF4tjVbOS00WIVZ-lX56xpL6MvtnvmU",
+      authDomain: "koreanlms-f3ced.firebaseapp.com",
+      databaseURL: "https://koreanlms-f3ced-default-rtdb.firebaseio.com",
+      projectId: "koreanlms-f3ced",
+      storageBucket: "koreanlms-f3ced.appspot.com",
+      messagingSenderId: "436107110517",
+      appId: "1:436107110517:web:da260ddcc8f80e3714b03c",
+      measurementId: "G-D0B6JM1Q82"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+
+  </script>
+
   <script>
     // The value below is injected by flutter build, do not touch.
     const serviceWorkerVersion = null;
