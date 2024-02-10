@@ -238,9 +238,7 @@ class _ClassTabState extends State<ClassTab> {
               ),
             ),
             isBatchSelected
-                ? Container(
-                    height: 200,
-                    //width: 200,
+                ? Expanded(
                     child: DataTable(
                       columns: [
                         DataColumn(
