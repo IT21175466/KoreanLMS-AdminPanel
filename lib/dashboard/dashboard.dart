@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:koreanadminpanel/tabs/batches_tab.dart';
-import 'package:koreanadminpanel/tabs/class_tab.dart';
 import 'package:koreanadminpanel/tabs/home_tab.dart';
 import 'package:koreanadminpanel/tabs/images_tab.dart';
+import 'package:koreanadminpanel/tabs/sample_tab.dart';
 import 'package:koreanadminpanel/tabs/students_tab.dart';
 
 class Dashboard extends StatefulWidget {
@@ -30,7 +30,7 @@ class _DashboardState extends State<Dashboard> {
     //Students
     BatchesTab(),
 
-    ClassTab(),
+    SampleTab(),
   ];
 
   @override
