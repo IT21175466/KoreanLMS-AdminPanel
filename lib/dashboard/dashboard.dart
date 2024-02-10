@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:koreanadminpanel/tabs/batches_tab.dart';
+import 'package:koreanadminpanel/tabs/class_tab.dart';
 import 'package:koreanadminpanel/tabs/home_tab.dart';
 import 'package:koreanadminpanel/tabs/images_tab.dart';
 import 'package:koreanadminpanel/tabs/students_tab.dart';
@@ -26,7 +28,9 @@ class _DashboardState extends State<Dashboard> {
     ImagesTab(),
 
     //Students
-    Text('Batches'),
+    BatchesTab(),
+
+    ClassTab(),
   ];
 
   @override
@@ -82,6 +86,10 @@ class _DashboardState extends State<Dashboard> {
                   NavigationRailDestination(
                     icon: Icon(Icons.batch_prediction),
                     label: Text("Batches"),
+                  ),
+                  NavigationRailDestination(
+                    icon: Icon(Icons.class_sharp),
+                    label: Text("Classes"),
                   ),
                 ],
                 selectedIndex: _selectedIndex),
