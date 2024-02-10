@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:koreanadminpanel/wigets/custom_button.dart';
+import 'package:koreanadminpanel/tabs/home_tab.dart';
+import 'package:koreanadminpanel/tabs/students_tab.dart';
 
 class Dashboard extends StatefulWidget {
   const Dashboard({super.key});
@@ -12,149 +13,13 @@ class _DashboardState extends State<Dashboard> {
   bool isExpanded = false;
   int _selectedIndex = 0;
   final List<Widget> _pages = [
-    Padding(
-      padding: EdgeInsets.symmetric(vertical: 20, horizontal: 30),
-      child: Column(
-        children: [
-          // Row(
-          //   children: [
-          //     IconButton(
-          //       onPressed: () {
-          //         setState(() {
-          //           isExpanded = !isExpanded;
-          //         });
-          //       },
-          //       icon: Icon(Icons.menu),
-          //     ),
-          //   ],
-          // ),
-          // SizedBox(
-          //   height: 20,
-          // ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              Flexible(
-                child: Card(
-                  child: Padding(
-                    padding: const EdgeInsets.all(18.0),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Row(
-                          children: [
-                            Icon(
-                              Icons.article,
-                              size: 26.0,
-                            ),
-                            SizedBox(
-                              width: 15,
-                            ),
-                            Text(
-                              "Students",
-                              style: TextStyle(
-                                fontSize: 20,
-                                fontFamily: 'Poppins',
-                                fontWeight: FontWeight.bold,
-                                color: Color.fromARGB(
-                                  255,
-                                  109,
-                                  109,
-                                  109,
-                                ),
-                              ),
-                            ),
-                          ],
-                        ),
-                        SizedBox(
-                          height: 20,
-                        ),
-                        Text(
-                          "760 Students",
-                          style: TextStyle(
-                            fontSize: 40,
-                            fontFamily: 'Poppins',
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-              ),
-              Flexible(
-                child: Card(
-                  child: Padding(
-                    padding: const EdgeInsets.all(18.0),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Row(
-                          children: [
-                            Icon(
-                              Icons.article,
-                              size: 26.0,
-                            ),
-                            SizedBox(
-                              width: 15,
-                            ),
-                            Text(
-                              "Batches",
-                              style: TextStyle(
-                                fontSize: 20,
-                                fontFamily: 'Poppins',
-                                fontWeight: FontWeight.bold,
-                                color: Color.fromARGB(
-                                  255,
-                                  109,
-                                  109,
-                                  109,
-                                ),
-                              ),
-                            ),
-                          ],
-                        ),
-                        SizedBox(
-                          height: 20,
-                        ),
-                        Text(
-                          "30 Batches",
-                          style: TextStyle(
-                            fontSize: 40,
-                            fontFamily: 'Poppins',
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-              ),
-            ],
-          ),
-          Spacer(),
-        ],
-      ),
-    ),
+    HomeTab(),
 
     //Students
     Text('Authentication'),
 
     //Students
-    Padding(
-      padding: EdgeInsets.symmetric(vertical: 20, horizontal: 30),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          CustomButton(
-            text: 'Add Student',
-            height: 40,
-            width: 200,
-            backgroundColor: Colors.green,
-          ),
-        ],
-      ),
-    ),
+    StudentsTab(),
 
     //Students
     Text('Banners'),
