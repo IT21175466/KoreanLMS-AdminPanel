@@ -128,6 +128,203 @@ class _HomeTabState extends State<HomeTab> {
                   ),
                 ),
               ),
+              Flexible(
+                child: Card(
+                  child: Padding(
+                    padding: const EdgeInsets.all(18.0),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Row(
+                          children: [
+                            Icon(
+                              Icons.article,
+                              size: 26.0,
+                            ),
+                            SizedBox(
+                              width: 15,
+                            ),
+                            Text(
+                              "Classes",
+                              style: TextStyle(
+                                fontSize: 20,
+                                fontFamily: 'Poppins',
+                                fontWeight: FontWeight.bold,
+                                color: Color.fromARGB(
+                                  255,
+                                  109,
+                                  109,
+                                  109,
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                        SizedBox(
+                          height: 20,
+                        ),
+                        Text(
+                          "80 Classes",
+                          style: TextStyle(
+                            fontSize: 40,
+                            fontFamily: 'Poppins',
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              Flexible(
+                child: Card(
+                  child: Padding(
+                    padding: const EdgeInsets.all(18.0),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Row(
+                          children: [
+                            Icon(
+                              Icons.article,
+                              size: 26.0,
+                            ),
+                            SizedBox(
+                              width: 15,
+                            ),
+                            Text(
+                              "Videos",
+                              style: TextStyle(
+                                fontSize: 20,
+                                fontFamily: 'Poppins',
+                                fontWeight: FontWeight.bold,
+                                color: Color.fromARGB(
+                                  255,
+                                  109,
+                                  109,
+                                  109,
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                        SizedBox(
+                          height: 20,
+                        ),
+                        Text(
+                          "300 Videos",
+                          style: TextStyle(
+                            fontSize: 40,
+                            fontFamily: 'Poppins',
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+              Flexible(
+                child: Card(
+                  child: Padding(
+                    padding: const EdgeInsets.all(18.0),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Row(
+                          children: [
+                            Icon(
+                              Icons.article,
+                              size: 26.0,
+                            ),
+                            SizedBox(
+                              width: 15,
+                            ),
+                            Text(
+                              "Papers",
+                              style: TextStyle(
+                                fontSize: 20,
+                                fontFamily: 'Poppins',
+                                fontWeight: FontWeight.bold,
+                                color: Color.fromARGB(
+                                  255,
+                                  109,
+                                  109,
+                                  109,
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                        SizedBox(
+                          height: 20,
+                        ),
+                        Text(
+                          "476 Papers",
+                          style: TextStyle(
+                            fontSize: 40,
+                            fontFamily: 'Poppins',
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+              Flexible(
+                child: Card(
+                  child: Padding(
+                    padding: const EdgeInsets.all(18.0),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Row(
+                          children: [
+                            Icon(
+                              Icons.article,
+                              size: 26.0,
+                            ),
+                            SizedBox(
+                              width: 15,
+                            ),
+                            Text(
+                              "Zoom Links",
+                              style: TextStyle(
+                                fontSize: 20,
+                                fontFamily: 'Poppins',
+                                fontWeight: FontWeight.bold,
+                                color: Color.fromARGB(
+                                  255,
+                                  109,
+                                  109,
+                                  109,
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                        SizedBox(
+                          height: 20,
+                        ),
+                        Text(
+                          "870 Links",
+                          style: TextStyle(
+                            fontSize: 40,
+                            fontFamily: 'Poppins',
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
             ],
           ),
           Spacer(),
